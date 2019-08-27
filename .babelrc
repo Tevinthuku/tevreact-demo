@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-react-jsx", { "pragma": "createElement" }], // tell the babel plugin which function it needs to use for createElement. it defaults to React.createElement
+    ["@babel/plugin-proposal-class-properties"]
+  ]
+}
